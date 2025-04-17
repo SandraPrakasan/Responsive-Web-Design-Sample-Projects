@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Ratan Tata: Timeline</title>
+    <style>
+        /* ===== BASE STYLES ===== */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-gray);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== LAYOUT STYLES ===== */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 2rem;
+        }
+
+        /* ===== IMAGE STYLES ===== */
+        #img-div {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        #image {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: block;
+            margin: 0 auto;
+            max-height: 500px;
+        }
+
+        #img-caption {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #666;
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        h3 {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        pre {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 1.5rem;
+            overflow-x: auto;
+            font-family: monospace;
+        }
+
+        /* ===== LIST STYLES ===== */
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .timeline li {
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-size: 2rem;
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+        }
+
+        /* ===== LINK STYLES ===== */
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        /* ===== RESPONSIVE ADJUSTMENTS ===== */
+        @media (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            main {
+                padding: 1rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+            
+            #image {
+                max-height: 400px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header p {
+                padding: 0 1rem;
+            }
+            
+            .timeline li::before {
+                top: -0.3rem;
+            }
+            
+            pre {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tribute to Ratan Tata</h1>
+        <p>Ratan Tata is a visionary Indian industrialist and former chairman of Tata Sons, renowned for his transformative leadership, global expansions, and commitment to corporate social responsibility.</p> 
+    </header>
+    
+    <main id="main">
+        <section>
+            <figure id="img-div">
+                <img id="image" src="https://assets.gqindia.com/photos/6707922be2794c716820dfde/16:9/w_1920,c_limit/Ratan-Tata_001.jpg" alt="Ratan Tata portrait">
+                <figcaption id="img-caption">Ratan Tata (1937-present)</figcaption>
+            </figure>
+        </section>
+        
+        <section id="tribute-info">
+            <h2>Biography of Ratan Tata</h2>
+            
+            <pre>Full Name: Ratan Naval Tata
+Date of Birth: December 28, 1937
+Birthplace: Surat, Gujarat, India</pre>
+            
+            <p>Ratan Tata is an influential figure in Indian industry, known for his leadership of the Tata Group, one of India's largest and oldest conglomerates. He studied at Cornell University and later completed the Advanced Management Program at Harvard Business School.</p>
+            
+            <p>Under his leadership from 1991 to 2012, the Tata Group expanded significantly, entering new industries and markets. Notable achievements include the acquisition of several international companies, the launch of the Tata Nano, and a strong commitment to corporate social responsibility.</p>
+            
+            <p>Ratan Tata is also recognized for his philanthropic efforts and commitment to sustainable development.</p>
+            
+            <div class="timeline">
+                <h2>Timeline of Ratan Tata</h2>
+                <ul>
+                    <li><strong>1937</strong>: Born in Surat, Gujarat, India.</li>
+                    <li><strong>1955</strong>: Graduated from Cornell University with a degree in architecture.</li>
+                    <li><strong>1961</strong>: Joined Tata Group and worked at Tata Steel.</li>
+                    <li><strong>1971</strong>: Became the Director of Tata Industries.</li>
+                    <li><strong>1991</strong>: Appointed Chairman of Tata Group, succeeding J.R.D. Tata.</li>
+                    <li><strong>1998</strong>: Launched the Tata Indica, India's first passenger car developed entirely in India.</li>
+                    <li><strong>2008</strong>: Introduced the Tata Nano, marketed as the world's cheapest car.</li>
+                    <li><strong>2000s</strong>: Oversaw major acquisitions, including Jaguar Land Rover and Corus Group.</li>
+                    <li><strong>2012</strong>: Retired as Chairman of Tata Sons, succeeded by Cyrus Mistry.</li>
+                    <li><strong>Post-2012</strong>: Continues to engage in philanthropic activities and serves on various boards and advisory committees.</li>
+                </ul>
+            </div>
+            
+            <div class="achievements">
+                <h2>Achievements</h2>
+                <ul>
+                    <li>Expanded Tata Group's global presence.</li>
+                    <li>Championed innovation in the Indian automobile industry.</li>
+                    <li>Emphasized sustainable business practices and corporate social responsibility.</li>
+                </ul>
+            </div>
+            
+            <p>Ratan Tata's legacy is marked by his visionary leadership and contributions to both the business world and society at large.</p>
+        </section>
+        
+        <h3>If you have time, you should read more about this incredible human being on his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Ratan_Tata" target="_blank">Wikipedia entry</a>.</h3>
+    </main>
+</body>
+</html>
